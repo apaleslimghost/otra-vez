@@ -4,5 +4,26 @@
   },
   "dependencies": {
     "subarg": "^1.0.0"
-  }
+  },
+  "name": "otra-vez",
+  "version": "1.0.0",
+  "description": "live reloading repl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quarterto/otra-vez"
+  },
+  "keywords": [
+    "repl",
+    "live"
+  ],
+  "author": "Matt Brennan <mwrbrennan@gmail.com> (http://blog.153.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quarterto/otra-vez/issues"
+  },
+  "homepage": "https://github.com/quarterto/otra-vez"
 }
