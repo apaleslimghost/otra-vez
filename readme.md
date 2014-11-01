@@ -1,6 +1,8 @@
 <h1 align="center">
 otra vez
 </h1>
+<pre align="center">npm install -g otra-vez</pre>
+
 
 A magic REPL. Watches your modules for changes and re-injects their contents into the REPL.
 
