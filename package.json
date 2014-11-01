@@ -10,7 +10,7 @@
     "otra": "bin.js"
   },
   "name": "otra-vez",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "live reloading repl",
   "main": "index.js",
   "scripts": {
