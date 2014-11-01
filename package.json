@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "clear-require": "^1.0.1"
+  },
+  "dependencies": {
+    "subarg": "^1.0.0"
+  }
+}
