@@ -3,7 +3,11 @@
     "clear-require": "^1.0.1"
   },
   "dependencies": {
+    "clear-require": "^1.0.1",
     "subarg": "^1.0.0"
+  },
+  "bin": {
+    "otra": "bin.js"
   },
   "name": "otra-vez",
   "version": "1.0.0",
