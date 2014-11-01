@@ -19,6 +19,8 @@ function otraVez(module, options) {
 		util._extend(session.context, obj);
 	}
 
+	session.context.require = requireFresh;
+
 	requireAndInject(module);
 	fs.watch(path.resolve(module), function() {
 		console.log('\rreloaded ' + module);
