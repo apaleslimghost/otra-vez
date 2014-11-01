@@ -21,12 +21,14 @@ function otraVez(module, options) {
 
 	session.context.require = requireFresh;
 
-	requireAndInject(module);
-	fs.watch(path.resolve(module), function() {
-		console.log('\rreloaded ' + module);
+	if(module) {
 		requireAndInject(module);
-		session.displayPrompt();
-	});
+		fs.watch(path.resolve(module), function() {
+			console.log('\rreloaded ' + module);
+			requireAndInject(module);
+			session.displayPrompt();
+		});
+	}
 }
 
 module.exports = otraVez;
