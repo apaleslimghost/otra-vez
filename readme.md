@@ -5,7 +5,7 @@ otra vez
 A magic REPL. Watches your modules for changes and re-injects their contents into the REPL.
 
 ### Watch the screencast:
-[![](http://img.youtube.com/vi/icKzuyLuSxc/maxresdefault.jpg)](http://youtu.be/icKzuyLuSxc)
+[![](https://www.dropbox.com/s/0hwgz3ix8nt5vh0/Screenshot%202014-11-01%2012.43.21.png)](http://youtu.be/icKzuyLuSxc)
 
 ## Usage
 
