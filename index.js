@@ -15,11 +15,17 @@ function requireAndInject(session, module) {
 	util._extend(session.context, obj);
 }
 
-function watchModule(session, module, fn) {
-	fs.watch(path.resolve(module), function() {
-		console.log('\rreloaded ' + module);
-		fn(session, module);
-		session.displayPrompt();
+function watchModule(session, module, context, fn) {
+	fs.watch(path.resolve(module), function(event) {
+		if(event === 'change') {
+			console.log(
+				'\r' +
+				'reloaded ' + context +
+				' from ' + require.resolve(path.resolve(module))
+			);
+			fn(session, module);
+			session.displayPrompt();
+		}
 	});
 }
 
@@ -38,7 +44,7 @@ function requireMagic(session, module) {
 		})[0];
 
 		if(key) {
-			watchModule(session, module, requireKey(key));
+			watchModule(session, module, key, requireKey(key));
 		}
 	});
 
@@ -55,7 +61,7 @@ function otraVez(module, options) {
 
 	if(module) {
 		requireAndInject(session, module);
-		watchModule(session, module, requireAndInject);
+		watchModule(session, module, 'content', requireAndInject);
 	}
 }
 
