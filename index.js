@@ -16,12 +16,13 @@ function requireAndInject(session, module) {
 }
 
 function watchModule(session, module, context, fn) {
-	fs.watch(path.resolve(module), function(event) {
+	var resolved = require.resolve(path.resolve(module))
+	fs.watch(resolved, function(event) {
 		if(event === 'change') {
 			console.log(
 				'\r' +
 				'reloaded ' + context +
-				' from ' + require.resolve(path.resolve(module))
+				' from ' + resolved
 			);
 			fn(session, module);
 			session.displayPrompt();
