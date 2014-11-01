@@ -4,6 +4,9 @@ otra vez
 
 A magic REPL. Watches your modules for changes and re-injects their contents into the REPL.
 
+### Watch the screencast:
+[![](http://img.youtube.com/vi/icKzuyLuSxc/maxresdefault.jpg)](http://youtu.be/icKzuyLuSxc)
+
 ## Usage
 
 ```
