@@ -7,7 +7,7 @@ otra vez
 A magic REPL. Watches your modules for changes and re-injects their contents into the REPL.
 
 ### Watch the screencast:
-[![](https://dl.dropboxusercontent.com/u/3723930/Screenshot%202014-11-01%2012.43.21.png)](http://youtu.be/icKzuyLuSxc)
+[![screencast thumbnail](http://img.youtube.com/vi/icKzuyLuSxc/0.jpg)](http://youtu.be/icKzuyLuSxc)
 
 ## Usage
 
